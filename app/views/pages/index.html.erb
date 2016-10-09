@@ -1,0 +1,14 @@
+<% @pages.each do |p| %>
+<h1><%=link_to p.page_name, page_path(p) %></h1>
+<hr>
+<!-- <%= p.page_body %> -->
+<% end %>
+
+<script>
+$(document).ready(function(){
+$('#myTabs a').click(function (e) {
+e.preventDefault()
+$(this).tab('show')
+})
+})
+</script>

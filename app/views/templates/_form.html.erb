@@ -1,0 +1,17 @@
+<%= simple_form_for(template) do |f| %>
+  <%= f.input :temp_name %>
+  <%= f.input :temp_body, as: :summernote, label: false%>
+  <%= f.input :image %>
+    <%= f.submit class: " btn btn-default" %>
+<% end %>
+
+
+
+
+<script>
+  $(document).ready(function () {
+    jQuery('[data-provider="summernote"]').each(function(){
+  jQuery(this).summernote({ });
+})
+  });
+</script>

@@ -1,0 +1,15 @@
+<%= simple_form_for(@page) do | f | %>
+  <%= f.input :image,:as => :hidden %>
+  <%= f.input :page_body, as: :summernote, label: false %>
+  <%= f.input :page_name %>
+  <%= f.submit class:"btn btn-danger" %>
+<% end %>
+
+
+<script>
+  $(document).ready(function () {
+    $('[data-provider="summernote"]').each(function(){
+  $(this).summernote({ });
+})
+  });
+</script>

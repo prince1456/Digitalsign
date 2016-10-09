@@ -1,0 +1,12 @@
+class CreatePages < ActiveRecord::Migration[5.0]
+  def change
+    create_table :pages do |t|
+      t.string :page_name
+      t.text :page_body
+      t.references :user, foreign_key: true
+      t.references :template, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end

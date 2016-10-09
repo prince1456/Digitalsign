@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <br>
+  <br>
+  <br>
+  <strong>Temp name:</strong>
+  <%= @template.temp_name%>
+</p>
+
+<p>
+  <strong>Temp body:</strong>
+  <%= raw(@template.temp_body) %>
+</p>
+
+<%= link_to 'Edit', edit_template_path(@template) %> |
+<%= link_to 'Back', templates_path %>

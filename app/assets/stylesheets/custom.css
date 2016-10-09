@@ -1,0 +1,83 @@
+.row2{
+  height: 50vh;
+}
+.menu-item1{
+  background-image: url("./menu-burger-1.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.menu-item2{
+  background-image: url("./menu-burger-2.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.menu-item3{
+  background-image: url("./menu-burger-3.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.menu-item4{
+  background-image: url("./menu-burger-4.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.menu-item5{
+  background-image: url("/assets/menu-burger-5.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.menu-item6{
+  background-image: url("./menu-burger-6.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header{
+  color: #ffd900;
+  padding: 15px 10px 0 0;
+  font-size: 45px;
+  line-height: 30px;
+
+
+}
+.text{
+  background-color: rgba(255, 255, 255, 0.88);
+  height: 27%;
+  position: absolute;
+  right: 3%;
+  bottom: 0px
+
+}
+.text2{
+  background-color: rgba(255, 255, 255, 0.88);
+  height: 27%;
+  position: absolute;
+  right: 31%;
+  bottom: 0px
+
+}
+.slog{
+  color: #fff;
+  font-size: 25px;
+  clear: right;
+}
+.big-price{
+  clear: right;
+  color: #fff;
+  font-size: 6em;
+  position: absolute;
+  bottom: 25%;
+  right: 7%;
+}
