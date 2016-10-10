@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # gem 'best_in_place', '~> 3.0.1'
 # gem "wysiwyg-rails"
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'summernote-rails', '0.8.1.1'
 gem "paperclip", "~> 5.0.0"
 # gem 'bootstrap-sass'
@@ -15,7 +16,7 @@ gem 'carrierwave', '>= 1.0.0.beta', '<2.0'
 gem "mini_magick"
 gem 'jquery-ui-rails'
 gem 'fog'
-gem 'will_paginate', '~> 3.1.0'
+# gem 'will_paginate', '~> 3.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use postgresql as the database for Active Record

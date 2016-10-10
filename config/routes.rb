@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'uploads/create'
-
+  get "/admin" => "admin#admin", as: :admin
   resources :users
 
   resources :sessions, only: [:new, :create] do
