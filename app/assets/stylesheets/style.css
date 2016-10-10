@@ -759,7 +759,7 @@ body {
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -777,4 +777,12 @@ body {
 .body-newpage{
 	background-color: #000;
 	background-image: url("eight_horns.png");
+}
+
+
+.bodypage{
+	padding-top: 70px;
+}
+.sidenav{
+	padding-top: 90px;
 }

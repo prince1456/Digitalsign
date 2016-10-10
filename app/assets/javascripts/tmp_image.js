@@ -8,7 +8,19 @@ $(document).ready(function(){
       $("section").remove();
       // $(".sidekick-body").prepend(body);
       $(".note-editable.panel-body").html(body);
-      $("#page_image").val(image)
+      $("#page_image").val(image);
+
     });
   }
+
 });
+function openNav() {
+    document.getElementById("mySidenav").style.width = "427px";
+    document.getElementById("main").style.marginLeft = "427px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "black";
+}
