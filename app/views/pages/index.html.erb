@@ -1,14 +1,26 @@
+<div class="bodypage">
+  <div class="col-md-6">
 <% @pages.each do |p| %>
-<h1><%=link_to p.page_name, page_path(p) %></h1>
+<h3><div class:"img-frame"><%=link_to p.page_name, page_path(p), data:{ image: p.image }%></div></h3>
 <hr>
 <!-- <%= p.page_body %> -->
 <% end %>
+</div>
+</div>
+<div class="col-md-6">
 
-<script>
-$(document).ready(function(){
-$('#myTabs a').click(function (e) {
-e.preventDefault()
-$(this).tab('show')
+<img src="" class="img-fluid" alt="Responsive image">
+
+</div>
+<!-- <script>
+$(document).ready(function() {
+  $("a").hover( function(event){
+    event.preventDefault();
+    console.log(event);
+
+    $(".img-fluid").attr("src")
+  })
 })
-})
-</script>
+
+
+</script> -->

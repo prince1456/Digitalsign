@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
-  layout "layouts/admin", only: [:index, :new]
+  layout "layouts/admin"
   before_action :authorize!, only: [:destroy, :update, :edit]
   def index
     # @pages = Page.all

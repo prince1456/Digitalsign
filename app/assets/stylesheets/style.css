@@ -786,3 +786,20 @@ body {
 .sidenav{
 	padding-top: 90px;
 }
+
+.img-template{
+	padding-bottom: 25px;
+}
+
+.containerfortemplate{
+	background-color: #fdfdfd;
+	border-radius: 25px;
+}
+
+.cont-template{
+	border-bottom: 1px solid black;
+	height: 180px;
+}
+ .pad-top{
+	 padding-top: 100px;
+ }
