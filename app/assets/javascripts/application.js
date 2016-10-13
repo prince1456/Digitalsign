@@ -14,5 +14,8 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require summernote
+//= require fullscreen
 //= require turbolinks
+//= require underscore
+//= require gmaps/google
 //= require_tree .

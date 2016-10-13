@@ -18,3 +18,27 @@
  .modal-backdrop {
    z-index: -1;
  }
+
+ .navbar-brand{
+ 	color: black !important;
+   padding: 29px;
+   font-size: 52px;
+   vertical-align: bottom;
+ }
+
+ .navbar-brand > img {
+   margin-top: -49px;
+   border: solid 1px #e7e7e7;
+ }
+
+ .navbar-brand span {
+     color: #b1ce1e;
+ }
+
+
+ .navbar-brand2{
+   color: white !important;
+    padding: 29px;
+    font-size: 40px;
+    vertical-align: bottom;
+ }

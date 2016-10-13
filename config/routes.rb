@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   get 'uploads/create'
   get "/admin" => "admin#admin", as: :admin
   resources :users
+  resources :conversations do
+    resources :messages
+end
 
   resources :sessions, only: [:new, :create] do
     delete :destroy, on: :collection

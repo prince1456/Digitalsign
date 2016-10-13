@@ -1,14 +1,18 @@
 class UsersController < ApplicationController
+  layout "layouts/admin", only: [:show]
 
   def new
     @user = User.new
+  end
+  def show
+    @user = User.find params[:id]
   end
 
   def create
     @user = User.new user_params
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_path, notice: "Thanks for signing up"
+      redirect_to admin_path, notice: "Thanks for signing up"
     else
       flash[:alert] = "fix errors below"
       render :new
@@ -22,6 +26,9 @@ class UsersController < ApplicationController
                                  :last_name,
                                  :email,
                                  :password,
-                                 :password_confirmation)
+                                 :user_name,
+                                 :password_confirmation,
+                                 :street_line
+                                 )
   end
 end

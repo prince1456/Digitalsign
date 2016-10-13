@@ -1,0 +1,123 @@
+.header{
+  background-color: #005316;
+  height: 20vh;
+  color: #fff;
+  padding-top: 20px;
+}
+.row-1{
+  height: 40vh;
+  background-color: black;
+
+}
+.row-2{
+  height: 40vh;
+  background-color: red;
+}
+.img-restaurant{
+  width: 100%;
+  height:100px;
+
+}
+.color1{
+  background-color: #005316;
+}
+.color2{
+  background-color: #000;
+  height: 40vh;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.body3{
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaf4b+0,f7ee4a+33,ff920a+100 */
+background: rgb(255,175,75); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,175,75,1) 0%, rgba(247,238,74,1) 33%, rgba(255,146,10,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,175,75,1) 0%,rgba(247,238,74,1) 33%,rgba(255,146,10,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,175,75,1) 0%,rgba(247,238,74,1) 33%,rgba(255,146,10,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+
+}
+
+.text{
+  text-align: center;
+  overflow: hidden;
+  padding: 0px 29px;
+
+
+}
+
+.text p{
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 18px;
+  color: black;
+}
+
+.text h3{
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.cel{
+  position: relative;
+  padding: 20px;
+}
+
+.cel .price{
+  position: absolute;
+  top: 144px;
+  z-index: 2;
+
+}
+
+.price strong{
+
+  position: relative;
+  z-index: 100;
+  padding: 22px 0;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 22px;
+}
+
+
+.price {
+    background: red;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+.price:before, .price:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: red;
+}
+.price:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+.price:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}

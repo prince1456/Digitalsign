@@ -1,3 +1,19 @@
+<script>
+  $(document).ready(function(){
+    $('#btn-fullscreen').click(function() {
+      console.log("haha");
+      $('#fullscreen').fullscreen();
+      return false;
+    });
+    // exit fullscreen
+    $('#fullscreen .exitfullscreen').click(function() {
+      $.fullscreen.exit();
+      return false;
+    });
+  })
+</script>
+
+
   <p id="notice"><%= notice %></p>
     <div class="container pad-top">
       <p>
@@ -28,20 +44,3 @@
         <%= link_to 'Back', pages_path %>
       </div>
     </div>
-
-
-
-    <script>
-      $(document).ready(function(){
-        $('#btn-fullscreen').click(function() {
-          console.log("haha");
-          $('#fullscreen').fullscreen();
-          return false;
-        });
-        // exit fullscreen
-        $('#fullscreen .exitfullscreen').click(function() {
-          $.fullscreen.exit();
-          return false;
-        });
-      })
-    </script>

@@ -252,6 +252,8 @@ h2.heading-title{
 	margin: 0 auto;
 }
 
+
+
 /*=============================================
   Banner styles
 ================================================*/
@@ -261,7 +263,7 @@ h2.heading-title{
 	background-size: cover;
 }
 .banner-content{
-	padding: 300px 0px 300px 0px;
+	padding: 200px 0px 200px 0px;
 }
 
 h2.title{
@@ -713,7 +715,7 @@ color:black
 	z-index: 9999;
 }
 .modal-header, h4, .close {
-		background-color: #5cb85c;
+		background-color: #29526D;
 		color:white !important;
 		text-align: center;
 		font-size: 30px;

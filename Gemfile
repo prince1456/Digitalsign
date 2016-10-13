@@ -1,7 +1,14 @@
 source 'https://rubygems.org'
 
+gem "googlecharts"
+# gem 'private_pub'
+# gem 'thin'
 # gem 'best_in_place', '~> 3.0.1'
 # gem "wysiwyg-rails"
+gem 'geocoder'
+gem 'gmaps4rails'
+# gem 'underscore-rails'
+
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'summernote-rails', '0.8.1.1'
 gem "paperclip", "~> 5.0.0"
