@@ -1,26 +1,18 @@
-<div class="bodypage">
-  <div class="col-md-6">
-<% @pages.each do |p| %>
-<h3><div class:"img-frame"><%=link_to p.page_name, page_path(p), data:{ image: p.image }%></div></h3>
-<hr>
-<!-- <%= p.page_body %> -->
-<% end %>
+<div class="container bodypage">
+  <div class="user-container">
+    <ul>
+      <% @pages.each do |p| %>
+        <li>
+          <div class="row">
+              <div class="col-md-3">
+                <h2><div class:"img-frame"><%=link_to p.page_name, page_path(p)%></div></h2>
+              </div>
+            <div class="col-md-9">
+              <%= image_tag p.image,class:"user-index-picture"  %>
+            </div>
+        </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
-</div>
-<div class="col-md-6">
-
-<img src="" class="img-fluid" alt="Responsive image">
-
-</div>
-<!-- <script>
-$(document).ready(function() {
-  $("a").hover( function(event){
-    event.preventDefault();
-    console.log(event);
-
-    $(".img-fluid").attr("src")
-  })
-})
-
-
-</script> -->

@@ -16,30 +16,26 @@
 
   <p id="notice"><%= notice %></p>
     <div class="container pad-top">
-      <p>
-        <strong>Page name:</strong>
-        <%= @page.page_name %>
-      </p>
-      <p>
-        <strong>Page image:</strong>
-        <%= image_tag @page.image %>
-      </p>
-
+      <div class="row">
+        <div class="col-md-2">
+          <strong>Page name:</strong>
+          <p><%= @page.page_name %></p>
+        </div>
+        <div class:"col-md-8">
+          <%= image_tag @page.image, class:" img-responsive img-thumbnail" %>
+        </div>
+      </div>
 
       <div id="fullscreen">
           <%= raw(@page.page_body) %>
       </div>
 
       <div class="clearfix"></div>
+      <br>
       <div>
-         <button id="btn-fullscreen"> full screen</button>
+         <button id="btn-fullscreen" class="btn btn-default btn-lg"> full screen</button>
       </div>
       <div>
-        <p>
-          <strong>Template:</strong>
-          <%= @page.template %>
-        </p>
-
         <%= link_to 'Edit', edit_page_path(@page) %> |
         <%= link_to 'Back', pages_path %>
       </div>

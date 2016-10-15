@@ -2,10 +2,10 @@ class AdminController < ApplicationController
 
   def admin
     @user = User.all
-    @user2 = User.where("created_at >= ?", Time.zone.now.beginning_of_day)
+    @user2 = User.where("created_at >= ?", Time.now.beginning_of_day)
     @templates = Template.all
     @pages = Page.all
-    @page =Template.where("created_at >= ?", Time.zone.now.beginning_of_day)
+    @page =Page.where("created_at >= ?", Time.now.beginning_of_day)
 
     @bar = Gchart.bar(
       :size => '600x400',
@@ -18,13 +18,18 @@ class AdminController < ApplicationController
       :stacked => false,
       :legend_position =>"bottom",
       :axis_with_labels => [['r'], ['y']],
-      :max_value => @pages.count + @page.count,
-      :max_value => 10,
+      :max_value => @pages.count + @page.count + 10,
       :min_value => 0,
-      :axis_labels => [["user| pages | templates"]],
-      :bar_width_and_spacing => '100,70'
+      :labels => ["user| pages | templates"],
+      :bar_width_and_spacing => '100,40'
     )
-
+    # @piechart = Gchart.pie_3d(
+    #   :size => '600x400',
+    #   :bg => 'EFEFEF',
+    #   :data => [20, 35, 45],
+    #   :legend =>["today", "Total"],
+    #   :labels => ["user", "Rob", "Matt"]
+    # )
     @markers = Gmaps4rails.build_markers(@user) do |user, marker|
       marker.lat user.latitude
       marker.lng user.longitude

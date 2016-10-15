@@ -31,10 +31,18 @@
             </table>
         </div>
       </div>
-      <center><%= image_tag @bar %></center>
+      <div class="row">
+        <div class="pull-left col-md-6">
+          <%= image_tag @bar, class: "img-thumbnail" %>
+        </div>
+        <div class="pull-right col-md-6">
+
+            <div id="map" class="img-thumbnail"style='color:#23649d; width: 100%; height: 400px;'></div>
+        </div>
+    </div>
       <br>
       <div class="map index">
-        <div id="map" style='color:#23649d; width: 100%; height: 400px;'></div>
+        <div id="map" style='color:#23649d; width: 600px; height: 400px;'></div>
       </div>
     </div>
 

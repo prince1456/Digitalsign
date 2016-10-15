@@ -805,3 +805,35 @@ body {
  .pad-top{
 	 padding-top: 100px;
  }
+
+
+
+ .user-container li {
+   width: 100%;
+   padding: 20px;
+   background-color: #FAF9F0;
+   margin: 18px 0px;
+   border-radius: 5px;
+   position: relative;
+ }
+
+ .user-container li a {
+   color: #333;
+ }
+
+ .user-index-info {
+   width: 930px;
+   vertical-align: top;
+   height: 150px;
+   margin-left: 165px;
+ }
+
+ .user-index-picture {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  display: inline;
+  width: 60%;
+  float: left;
+}
