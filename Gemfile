@@ -4,7 +4,6 @@ gem "googlecharts"
 
 gem 'geocoder'
 gem 'gmaps4rails'
-gem 'ckeditor'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'summernote-rails', '0.8.1.1'
 gem "paperclip", "~> 5.0.0"

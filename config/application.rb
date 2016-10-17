@@ -15,7 +15,6 @@ require "sprockets/railtie"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-Rails.application.config.assets.precompile += %w(ckeditor/config.js)
 module Final
   class Application < Rails::Application
 
