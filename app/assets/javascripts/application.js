@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require summernote
+//= require ckeditor/init
 //= require fullscreen
 //= require turbolinks
 //= require underscore
