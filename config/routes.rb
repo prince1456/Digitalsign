@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
+  
   get 'uploads/create'
   get "/admin" => "admin#admin", as: :admin
   resources :users
