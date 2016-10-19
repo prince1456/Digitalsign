@@ -259,7 +259,7 @@ h2.heading-title{
 ================================================*/
 
 #section-banner{
-	background: url("./banner-2.jpg") ;
+	background: image-url("banner-2.jpg") ;
 	background-size: cover;
 }
 .banner-content{
@@ -373,7 +373,7 @@ h2.title{
 
 .profile-bg {
     background-color: transparent;
-    background: url("./banner-3.jpg");
+    background: image-url("banner-3.jpg");
     position: absolute;
     background-clip: border-box;
     background-attachment: scroll;
